@@ -413,6 +413,9 @@ nav a {
 /* end hotel info section */
 
 /*  packages section */
+.hotel-info-packages {
+    margin-bottom: 60px;
+}
 /* nav */
 .package-nav {
     margin-bottom: 40px;
@@ -456,18 +459,18 @@ nav a {
 
 .package-summery_top {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+    margin-bottom: 30px;   
 }
 
 .package-summery_highlights,
 .package-summery_offer-details {
     width: 538px;
     background: #fff;
-    height: 200px;
-    
 }
 .package-summery_highlights h3,
-.package-summery_offer-details h3{
+.package-summery_offer-details h3,
+.package-summery_details h3 {
     background: #0A223D;
     color: #fff;
     font-style: normal;
@@ -481,7 +484,8 @@ nav a {
 
 .options {
     display: flex;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
+    padding: 25px;   
 }
 
 .options li{
@@ -492,17 +496,85 @@ nav a {
     color: #333333;
     padding-left: 37px;
     background: url(img/packages/circle_check.png) no-repeat;
-    background-size: 16px 16px;
-    margin-top: 22px;
-    margin-left: 25px;
-    width: 40%;
-    height: 10%;
+    background-size: 16px 16px;    
+    width: 50%;
+    margin-bottom: 17px;
 }
 
+.offer-details_box {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.offer-details_box_up {
+    display: flex;
+    
+}
+
+.package-summery_details {
+    background: #fff;
+}
+
+.package-summery_bottom_up-columns,
+.package-summery_bottom_down-columns {
+    display: flex;
+}
+
+.package-summery_details ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.package-summery_details h4 {   
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #EC1F46;   
+}
+
+.package-summery_details ul li {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+    padding-left: 37px;
+    background: url(img/packages/circle_check.png) no-repeat;
+    background-size: 16px 16px;
+    margin: 22px 0 0 0;     
+}
+
+.package-summery_bottom_up-columns,
+.package-summery_bottom_down-columns {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.package-summery_bottom_up_col,
+.package-summery_bottom_down_col {
+    width: 30%;
+}
 
 /* end Package Summery */
 
 /* End packages section */
+
+.other-packages h2{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;    
+    color: #333333;
+    margin-bottom: 60px;
+
+}
 .package {
     display: flex;
     border-radius: 8px;
@@ -521,8 +593,7 @@ nav a {
     position: absolute;
     left: 0;
     top: 26px;
-    margin-left: 0;
-    float: none;
+    margin-left: 0;    
     border-radius: 0 4px 4px 0;
     width: 95px;
     height: 30px;
@@ -590,7 +661,7 @@ p.package_price_now {
     font-weight: bold;
     margin: 0;
     margin-top: 5px;
-    float: left;
+    
 }
 
 .package_button {
